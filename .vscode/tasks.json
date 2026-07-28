@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "DB: Open SQLite (command palette)",
+            "type": "shell",
+            "command": "echo Run in Command Palette: SQLite: Open Database -> database/database.sqlite",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "DB: Export readable snapshot",
+            "type": "shell",
+            "command": "php artisan db:inspect",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "none",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
